@@ -1,0 +1,27 @@
+body{
+    /* background-image: url("../img/vivid-blurred-colorful.jpg"); */
+   
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: #f87d25;
+}
+.nav-link:focus, .nav-link:hover{
+    color:black;
+}
+.btn_login{
+    background-color: black;
+    color: #ffffff;
+}
+.btn_login:hover{
+    color: aliceblue;
+    background-color: #f87d25;
+}
+.navbar{
+    background-color: #ffebd885 !important;
+    box-shadow: 1px 1px 4px 1px #888888;
+}
