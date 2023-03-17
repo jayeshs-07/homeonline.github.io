@@ -3,7 +3,11 @@ body{
    
     background-size: cover;
     font-family: 'Poppins', sans-serif;
-    
+    height: 1000px;
+}
+.navbar{
+    width: 100%;
+    transition: 0.3s;
 }
 .navbar-brand img{
     width: 200px;
@@ -85,6 +89,22 @@ body{
  
     height: 88vh;
 }
+.nav_search{
+    bottom: 14%;
+    left: 12%;
+}
+.search_bg{
+    display: flex;
+    background-color: #00000082;
+    width: 241vh;
+    height: 100px;
+    margin-left: 114px;
+    position: relative;
+    border-radius: 20px;
+}
+.tab-content{
+    bottom: 15%;
+}
 header.masthead {
     position: relative;
     background-color: #343a40;
@@ -122,22 +142,13 @@ header.masthead {
     position: relative;
     text-align: center;
   }
-  .tab-content > .active{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    /* background-color: white; */
-    padding: 10px;
-    border-radius: 45px;
-  }
+  
   .nav-tabs{
     background-color:#ffffff00
   }
  
   
-@media screen and (min-width: 320px) and (max-width:480px){
-   
+@media screen and (min-width: 320px) and (max-width:480px){ 
     .navbar-nav {
         padding: 12px;
        text-align: center;
@@ -161,7 +172,7 @@ header.masthead {
         display: flex;
         flex-direction:column;
     }
-  }
+}
 @media screen and (min-width: 480px) and (max-width:768px){
     .navbar-nav {
         padding: 12px;
@@ -179,4 +190,6 @@ header.masthead {
         flex-direction:column;
     }
   }
-  
+  @media screen and (min-width: 769px) and (max-width:1024px){
+
+  }
