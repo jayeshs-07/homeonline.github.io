@@ -150,262 +150,178 @@
     <div class="banner bg-holder d-flex justify-content-center bg-overlay-black-30">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12  w-100 position-relative">
-            <div class="row "style="padding-top: 120px;">
-              <h1 class="text-white text-center mb-2">THE BEST WAY TO </h1>
-              <p class="lead text-center text-white mb-4 fw-normal">Find Your Perfect Home</p>
-              <div class="card">
+          <div class=" col-12 col-lg-12 col-md-12 col-sm-12 ">
+            <div class="row "style="padding-top: 120px;display: flex;align-items: center;flex-direction: column;">
+              <div class="banner_heading my-5">
+                <h1 class="text-white text-center">THE BEST WAY TO </h1>
+                <p class="lead text-center text-white fw-normal">Find Your Perfect Home</p>
+              </div>
+              <div class="card bg_card col-sm-12">
                 <div class="card-body">
-                  
-                </div>
-              </div>
-              <nav class="d-flex position-absolute  nav_search">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buy</button>
-                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Rent</button>
-                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Commercial</button>
-                  <button class="nav-link" id="nav-plots-tab" data-bs-toggle="tab" data-bs-target="#nav-plots" type="button" role="tab" aria-controls="nav-plots" aria-selected="false">Plots</button>
-                </div>
-              </nav>
-              <div class="tab-content d-flex justify-content-center position-absolute " id="nav-tabContent">
-                <div class="tab-pane  fade show d-flex justify-content-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                  <div class="property-search-field d-flex top-0 position-absolute bg-white p-5" style="border-radius: 20px; left: 10%;">
-                    <div class="property-search-item d-flex position-relative justify-content-center">
-                      <form class="basic-select-wrapper  w-100 d-flex justify-content-center">
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Property type</label>
-                          <select class="form-control basic-select">
-                            <option>All Type</option>
-                            <option>Villa</option>
-                            <option>Apartment Building</option>
-                            <option>Commercial</option>
-                            <option>Office</option>
-                            <option>Residential</option>
-                            <option>Shop</option>
-                            <option>Apartment</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Status</label>
-                          <select class="form-control basic-select">
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                          </select>
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
-                          <div class="form-group-search">
-                            <label class="form-label">Location</label>
-                            <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="text" placeholder="Search Location"></div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
-                          <div class="form-group-search">
-                            <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center btn-lg" type="submit"><span>Search</span></button></div>
-                            </div>     
-                        </div>
-                        <!-- <div class="form-group text-center col-lg-2">
-                          <div class="d-flex justify-content-center d-md-inline-block">
-                            <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
-                            <i class="fas fa-angle-double-down"></i></a>
-                          </div>
-                        </div> -->
-                        
-                  </div>
-                  </div>
-                </div>
-                <div class="tab-pane  fade show d-flex justify-content-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                  <div class="property-search-field d-flex top-0 position-absolute bg-white p-5" style="border-radius: 20px; left: 10%;">
-                    <div class="property-search-item d-flex position-relative justify-content-center">
-                      <form class="basic-select-wrapper  w-100 d-flex justify-content-center">
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Property type</label>
-                          <select class="form-control basic-select">
-                            <option>All Type</option>
-                            <option>Villa</option>
-                            <option>Apartment Building</option>
-                            <option>Commercial</option>
-                            <option>Office</option>
-                            <option>Residential</option>
-                            <option>Shop</option>
-                            <option>Apartment</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Status</label>
-                          <select class="form-control basic-select">
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                          </select>
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
-                          <div class="form-group-search">
-                            <label class="form-label">Location</label>
-                            <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="text" placeholder="Search Location"></div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
-                          <div class="form-group-search">
-                            <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center btn-lg" type="submit"><span>Search</span></button></div>
-                            </div>     
-                        </div>
-                        <!-- <div class="form-group text-center col-lg-2">
-                          <div class="d-flex justify-content-center d-md-inline-block">
-                            <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
-                            <i class="fas fa-angle-double-down"></i></a>
-                          </div>
-                        </div> -->
-                        
-                  </div>
-                  </div>
-                </div>
-                <div class="tab-pane  fade show d-flex justify-content-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                  <div class="property-search-field d-flex top-0 position-absolute bg-white p-5" style="border-radius: 20px; left: 10%;">
-                    <div class="property-search-item d-flex position-relative justify-content-center">
-                      <form class="basic-select-wrapper  w-100 d-flex justify-content-center">
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Property type</label>
-                          <select class="form-control basic-select">
-                            <option>All Type</option>
-                            <option>Villa</option>
-                            <option>Apartment Building</option>
-                            <option>Commercial</option>
-                            <option>Office</option>
-                            <option>Residential</option>
-                            <option>Shop</option>
-                            <option>Apartment</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Status</label>
-                          <select class="form-control basic-select">
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                          </select>
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
-                          <div class="form-group-search">
-                            <label class="form-label">Location</label>
-                            <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="text" placeholder="Search Location"></div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
-                          <div class="form-group-search">
-                            <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center btn-lg" type="submit"><span>Search</span></button></div>
-                            </div>     
-                        </div>
-                        <!-- <div class="form-group text-center col-lg-2">
-                          <div class="d-flex justify-content-center d-md-inline-block">
-                            <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
-                            <i class="fas fa-angle-double-down"></i></a>
-                          </div>
-                        </div> -->
-                        
-                  </div>
-                  </div>
-                </div>
-                <div class="tab-pane  fade show d-flex justify-content-center" id="nav-plots" role="tabpanel" aria-labelledby="nav-plots-tab" tabindex="0">
-                  <div class="property-search-field d-flex top-0 position-absolute bg-white p-5" style="border-radius: 20px; left: 10%;">
-                    <div class="property-search-item d-flex position-relative justify-content-center">
-                      <form class="basic-select-wrapper  w-100 d-flex justify-content-center">
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Property type</label>
-                          <select class="form-control basic-select">
-                            <option>All Type</option>
-                            <option>Villa</option>
-                            <option>Apartment Building</option>
-                            <option>Commercial</option>
-                            <option>Office</option>
-                            <option>Residential</option>
-                            <option>Shop</option>
-                            <option>Apartment</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-lg-3 col-md-6 mx-2">
-                          <label class="form-label">Status</label>
-                          <select class="form-control basic-select">
-                            <option>For Rent</option>
-                            <option>For Sale</option>
-                          </select>
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
-                          <div class="form-group-search">
-                            <label class="form-label">Location</label>
-                            <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="text" placeholder="Search Location"></div>
-                          </div>
-                          
-                        </div>
-                        <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
-                          <div class="form-group-search">
-                            <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center btn-lg" type="submit"><span>Search</span></button></div>
-                            </div>     
-                        </div>
-                        <!-- <div class="form-group text-center col-lg-2">
-                          <div class="d-flex justify-content-center d-md-inline-block">
-                            <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
-                            <i class="fas fa-angle-double-down"></i></a>
-                          </div>
-                        </div> -->
-                        
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="property-search-field bg-white p-5" style="border-radius: 20px;">
-                <div class="property-search-item d-flex ">
-                  <form class="basic-select-wrapper w-100 d-flex justify-content-center">
-                    <div class="form-group col-lg-3 col-md-6 mx-2">
-                      <label class="form-label">Property type</label>
-                      <select class="form-control basic-select">
-                        <option>All Type</option>
-                        <option>Villa</option>
-                        <option>Apartment Building</option>
-                        <option>Commercial</option>
-                        <option>Office</option>
-                        <option>Residential</option>
-                        <option>Shop</option>
-                        <option>Apartment</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-lg-3 col-md-6 mx-2">
-                      <label class="form-label">Status</label>
-                      <select class="form-control basic-select">
-                        <option>For Rent</option>
-                        <option>For Sale</option>
-                      </select>
-                    </div>
-                    <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
-                      <div class="form-group-search">
-                        <label class="form-label">Location</label>
-                        <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="search" placeholder="Search Location"></div>
+                  <div class="search_tab">
+                    <nav class="search_tab_nav">
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <ul class="nav_list">
+                          <li class="">
+                            <button class="nav-link search_tab_link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Buy</button>
+                          </li>
+                          <li>
+                            <button class="nav-link search_tab_link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Rent</button>
+
+                          </li>
+                          <li>
+                            <button class="nav-link search_tab_link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Commercial</button>
+
+                          </li>
+                          <li>
+                            <button class="nav-link search_tab_link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">PG/co-living</button>
+
+                          </li>
+                       
+                        </ul>
+                         </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">               
+                            <div class="container search_list">
+                              <div class="row d-flex justify-content-center">
+                                  <div class="dropdown dropdown_section">
+                                    <button class="btn dropdown-toggle btn_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Ahmedabad
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><strong class="mx-2" style="color: #bebebe;">TOP CITIES</strong></li>
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </div>     
+                                <div class="nav_search_btn">
+                                    <input class="form-control flex-row" type="search" placeholder="Search" aria-label="Search">
+                                    <button type="button" class="btn btn-success btn-lg mx-5 btn_search">Search</button>
+                                </div>
+                              </div>
+                            </div>      
                       </div>
-                      
-                    </div>
-                    <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
-                      <div class="form-group-search">
-                        <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center" type="submit"><i class="fas fa-search me-1"></i><span>Search</span></button></div>
-                        </div>     
-                    </div>
-                    <!-- <div class="form-group text-center col-lg-2">
-                      <div class="d-flex justify-content-center d-md-inline-block">
-                        <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
-                        <i class="fas fa-angle-double-down"></i></a>
+                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="container search_list">
+                          <div class="row d-flex justify-content-center">
+                              <div class="dropdown dropdown_section">
+                                <button class="btn dropdown-toggle btn_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ahmedabad
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><strong>TOP CITIES</strong></li>
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>     
+                            <div class="nav_search_btn">
+                                <input class="form-control flex-row" type="search" placeholder="Search" aria-label="Search">
+                                <button type="button" class="btn btn-success btn-lg mx-5">Search</button>
+                            </div>
+                          </div>
+                        </div> 
                       </div>
+                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <div class="container search_list">
+                          <div class="row d-flex justify-content-center">
+                              <div class="dropdown dropdown_section">
+                                <button class="btn dropdown-toggle btn_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ahmedabad
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><strong>TOP CITIES</strong></li>
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>     
+                            <div class="nav_search_btn">
+                                <input class="form-control flex-row" type="search" placeholder="Search" aria-label="Search">
+                                <button type="button" class="btn btn-success btn-lg mx-5">Search</button>
+                            </div>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <div class="container search_list">
+                          <div class="row d-flex justify-content-center">
+                              <div class="dropdown dropdown_section">
+                                <button class="btn dropdown-toggle btn_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ahmedabad
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><strong>TOP CITIES</strong></li>
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>     
+                            <div class="nav_search_btn">
+                                <input class="form-control flex-row" type="search" placeholder="Search" aria-label="Search">
+                                <button type="button" class="btn btn-success btn-lg mx-5">Search</button>
+                            </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              
+              
+               <!-- <div class="property-search-field d-flex top-0 position-absolute bg-white p-5" style="border-radius: 20px; left: 10%;">
+                      <div class="property-search-item d-flex position-relative justify-content-center">
+                        <form class="basic-select-wrapper  w-100 d-flex justify-content-center">
+                          <div class="form-group col-lg-3 col-md-6 mx-2">
+                            <label class="form-label">Property type</label>
+                            <select class="form-control basic-select">
+                              <option>All Type</option>
+                              <option>Villa</option>
+                              <option>Apartment Building</option>
+                              <option>Commercial</option>
+                              <option>Office</option>
+                              <option>Residential</option>
+                              <option>Shop</option>
+                              <option>Apartment</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-lg-3 col-md-6 mx-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-control basic-select">
+                              <option>For Rent</option>
+                              <option>For Sale</option>
+                            </select>
+                          </div>
+                          <div class="form-group d-flex col-lg-3 col-md-6 mx-2">
+                            <div class="form-group-search">
+                              <label class="form-label">Location</label>
+                              <div class="d-flex align-items-center"><i class="far fa-compass me-1"></i><input class="form-control" type="text" placeholder="Search Location"></div>
+                            </div>
+                            
+                          </div>
+                          <div class="form-group d-flex col-lg-3 col-md-6 mx-2 d-flex justify-content-center">
+                            <div class="form-group-search">
+                              <div class="align-items-center ms-3 d-none d-lg-block mt-3 mx-3"><button class="btn btn-primary d-flex align-items-center btn-lg" type="submit"><span>Search</span></button></div>
+                              </div>     
+                          </div>
+                           <div class="form-group text-center col-lg-2">
+                            <div class="d-flex justify-content-center d-md-inline-block">
+                              <a class="more-search p-0" data-bs-toggle="collapse" href="#advanced-search" role="button" aria-expanded="false" aria-controls="advanced-search"> <span class="d-block pe-2 mb-1">Advanced search</span>
+                              <i class="fas fa-angle-double-down"></i></a>
+                            </div>
+                          </div> 
+                          
+                    </div>
                     </div> -->
-                    
-              </div>
-            </div>
+            
             </div>
             
         </div>
       </div>
-     <div class="container-fluid">
-        <div class="row">
-          
-        </div>
-     </div>
+     
     <!-- <header class="masthead">
       <div class="container position-relative">
           <div class="row justify-content-center">
