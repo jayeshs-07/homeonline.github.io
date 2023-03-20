@@ -84,10 +84,11 @@ body{
 .banner{
     position: relative;
     background-color: #343a40;
-    background: url("..//img/icon_box_bg.jpg") no-repeat center center;
+    background: url("..//img/web-banner.jpg") no-repeat center center;
     background-size: cover;
- 
-    height: 88vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
 }
 .nav_search{
     bottom: 14%;
@@ -146,8 +147,73 @@ header.masthead {
   .nav-tabs{
     background-color:#ffffff00
   }
- 
-  
+ .bg_card{
+    background-color: #303030ba;
+    height: 80px;
+    display: block;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+ }
+ .search_tab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 8px;
+    right: 130px;
+ }
+ .search_tab_link{
+    color: #fff;
+ }
+ .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+ {
+    background-color: #ffffff00;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #f87d25;
+ }
+ .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
+    border:none;
+    color: white;
+ }
+ .search_tab_nav{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    left: 20%;
+    bottom: 7px;
+ }
+ .nav_list{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+ }
+ .search_list{
+    display: flex;
+    position: relative;
+    width: 618px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 47px;
+    left: 132px;
+ }
+ .dropdown_section{
+    width: 30%;
+    display: flex;
+ }
+ .nav_search_btn{
+    width: 70%;
+    display: inline-flex;
+    position: relative;
+ }
+ .btn_dropdown{
+    border: none;
+    display: flex;
+    align-items: center;
+ }
 @media screen and (min-width: 320px) and (max-width:480px){ 
     .navbar-nav {
         padding: 12px;
@@ -172,6 +238,16 @@ header.masthead {
         display: flex;
         flex-direction:column;
     }
+    .bg_card{
+        width: 90%;
+    }
+    .search_list{
+        width: 100%;
+        bottom: 31px;
+    }
+    .btn_search{
+        
+    }
 }
 @media screen and (min-width: 480px) and (max-width:768px){
     .navbar-nav {
@@ -189,7 +265,16 @@ header.masthead {
         display: flex;
         flex-direction:column;
     }
+    .bg_card{
+        width: 70%;
+    }
+    .search_list{
+        width: 100%;
+        bottom: 31px;
+    }
   }
   @media screen and (min-width: 769px) and (max-width:1024px){
-
+    .bg_card{
+        width: 78%;
+    }
   }
