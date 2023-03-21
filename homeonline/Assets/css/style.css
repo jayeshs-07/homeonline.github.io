@@ -193,8 +193,12 @@ header.masthead {
     border-bottom: 2px solid #f87d25;
  }
  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus{
-    border:none;
+    
     color: white;
+    border-bottom: 2px solid #f87d25;
+    border-top: none;
+    border-left: none;
+    border-right:none;
  }
  .search_tab_nav{
     display: inline-block;
@@ -210,6 +214,9 @@ header.masthead {
     padding: 0;
     margin: 0;
  }
+ .nav_list li{
+
+ }
  .search_list{
     display: flex;
     position: relative;
@@ -218,6 +225,7 @@ header.masthead {
     padding: 20px;
     border-radius: 47px;
     left: 132px;
+    flex-direction: column;
  }
  .dropdown_section{
     width: 30%;
@@ -233,6 +241,7 @@ header.masthead {
     display: flex;
     align-items: center;
  }
+<<<<<<< HEAD
  .btn_search{
 
  }
@@ -252,6 +261,9 @@ header.masthead {
     top: 5px;
     z-index: 8 !important;
  }
+=======
+ 
+>>>>>>> 6c7c94235bc4a2b68c485316bbed4346d3a917ab
 @media screen and (min-width: 320px) and (max-width:480px){ 
     .navbar-nav {
         padding: 12px;
@@ -280,11 +292,36 @@ header.masthead {
         width: 90%;
     }
     .search_list{
-        width: 100%;
-        bottom: 31px;
+        width: 366px;
+        bottom: 7px;
     }
     .btn_search{
         
+    }
+    .search_tab_nav{
+        width: 404px;
+        left: 50%;
+        overflow-x: hidden;
+    }
+    .search_tab_link{
+        font-size: 12px;
+    }
+    .nav_search_btn{
+        width: 90%;
+    }
+    .dropdown_section{
+        position: absolute;
+        display: inline-block;
+        top: 104px;
+        left: 26%;
+    }
+    .btn_dropdown{
+        color: white;
+        background-color: #f75d34;
+        border-radius: 30px;
+    }
+    .btn:hover{
+        color: white;
     }
 }
 @media screen and (min-width: 480px) and (max-width:768px){
@@ -303,12 +340,36 @@ header.masthead {
         display: flex;
         flex-direction:column;
     }
+    .dropdown_section{
+        position: absolute;
+        display: inline-block;
+        top: 104px;
+        left: 29%;
+    }
+    .btn_dropdown{
+        color: white;
+        background-color: #f75d34;
+        border-radius: 30px;
+    }
+    .btn_dropdown .btn:hover{
+        color: white;
+    }
     .bg_card{
-        width: 70%;
+        width: 90%;
     }
     .search_list{
+        width: 435px;
+        bottom: 3px;
+    }
+    .nav_search_btn{
         width: 100%;
-        bottom: 31px;
+    }
+    .search_tab_nav{
+        display: flex;
+    position: relative;
+    overflow: auto;
+    width: 100vh;
+    left: 36%;
     }
   }
   @media screen and (min-width: 769px) and (max-width:1024px){
