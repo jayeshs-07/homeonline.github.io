@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item dropdown has-megamenu">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Property Services</a>
@@ -161,20 +161,39 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-lg-12">
-                        <nav class="nav nav_inner mb-2">
-                          <a class="nav-link nav_link active" aria-current="page" href="#">Buy</a>
-                          <a class="nav-link nav_link" href="#">RENT</a>
-                          <a class="nav-link nav_link" href="#">SELL</a>
-                          <a class="nav-link nav_link">COMMERCIAL</a>
+                        <nav class="nav nav_inner mt-2">
+                          <ul class="navbar-nav d-flex flex-row">
+                            <li class="nav-link nav_link active"><a href="#" class="btn_link">Buy</a></li>
+                            <li class="nav-link nav_link"><a href="#" >Buy</a></li>
+                            <li class="nav-link nav_link"><a href="#" >Buy</a></li>
+                          </ul>                          
                         </nav>
                       </div>
                       <div class="col-lg-12">
                         <div class="search_place_btn">
                           <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3 form_search" data-aos="fade-up" data-aos-delay="200">
-                            <div class="input-group flex-nowrap">
-                              <input type="text" class="form-control rounded-pill" placeholder="search" aria-label="Username" aria-describedby="addon-wrapping" style="height: 50px;">
-                              <button type="button" class="btn btn-success rounded-pill search_btn"><i class="bi bi-search"></i></button>
+                            <div class="container search_bg">
+                            <ul class="navbar-nav search_dropdown mt-2">
+                              <li class="nav-item dropdown">
+                                <button class="btn dropdown-toggle search_dropdown_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Ahmedabad
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <div class="input_group_search">
+                              <div class="input-group flex-nowrap">
+                              
+                                <input type="text" class="form-control " placeholder="Search for locality, landmark, project" aria-label="Username" aria-describedby="addon-wrapping" style="height: 50px; border-radius: 0 30px 30px 0; border:none;">
+                                <button type="button" class="btn  rounded-pill search_btn"><i class="bi bi-search"></i> <span>Search</span> </button>
+                              </div>
                             </div>
+                           
+                          </div>
                           </form>
                         </div>
                         
@@ -438,7 +457,12 @@
         </div>
           
       </div> -->
-    
+    <script>
+      $(".nav nav_link a").on("click", function () {
+      $(".nav nav_link").find("li.active").removeClass("active");
+      $(this).parent("li").addClass("active");
+    });
+    </script>
     
  
     <script

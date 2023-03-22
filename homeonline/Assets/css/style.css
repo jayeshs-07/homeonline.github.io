@@ -94,30 +94,25 @@ body{
     display: flex;
     justify-content: center;
 }
-.nav_search .nav_link{
+.nav_search .nav_link.active{
     color: white;
+}
+
+.nav_search .nav_link .btn_link .active{
+    border-bottom: 1px solid #f87d25;
 }
 .nav_search .nav_link:hover{
     display: inline-block;
     color: #ffffff;
-    background-color: #f87d25;
-    border-radius: 30px;
+    border-bottom: 1px solid #f87d25;
 }
 .nav link:hover{
 
 }
 .nav_inner{
     display: flex;
-    justify-content: center;
-}
-.search_bg{
-    display: flex;
-    background-color: #00000082;
-    width: 241vh;
-    height: 100px;
-    margin-left: 114px;
-    position: relative;
-    border-radius: 20px;
+    left: 27%;
+    position: absolute;
 }
 .tab-content{
     bottom: 15%;
@@ -241,12 +236,24 @@ header.masthead {
     display: flex;
     align-items: center;
  }
-<<<<<<< HEAD
+
  .btn_search{
 
  }
  .form_search{
     width: 60%;
+    background-color: #2e2e2ecf;
+    border-radius: 30px;
+    padding-top: 60px;
+ }
+ .input-group{
+    background-color: white;
+    border-radius: 30px;
+ }
+ .input_group_search{
+    display: inline-block;
+    width: 77%;
+    float: right;
  }
  .search_place_btn{
     width: 100%;
@@ -254,16 +261,36 @@ header.masthead {
     flex-direction: column;
     align-items: center;
  }
+ .search_bg{
+    background-color: white;
+    border-radius: 30px;
+ }
  .search_btn{
     position: absolute !important;
     display: flex;
-    right: 5px;
+    width: 100px;
+    right: 0px;
     top: 5px;
     z-index: 8 !important;
+    background-color: #f87d25;
+    border: none;
+    padding: 8px;
+    color: white;
  }
-=======
- 
->>>>>>> 6c7c94235bc4a2b68c485316bbed4346d3a917ab
+ .search_btn span{
+    margin-left: 8px;
+ }
+ .search_btn:hover{
+    background-color: #343a40;
+    color: white;
+ }
+ .search_dropdown{
+    display: flex;
+    position: absolute;
+ }
+ .search_dropdown_btn{
+    border:none;
+ }
 @media screen and (min-width: 320px) and (max-width:480px){ 
     .navbar-nav {
         padding: 12px;
@@ -370,6 +397,12 @@ header.masthead {
     overflow: auto;
     width: 100vh;
     left: 36%;
+    }
+    .search_dropdown{
+        padding: 0;
+    }
+    .search_dropdown_btn{
+        font-size: 12px;
     }
   }
   @media screen and (min-width: 769px) and (max-width:1024px){
