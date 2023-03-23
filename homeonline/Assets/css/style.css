@@ -77,14 +77,13 @@ body{
   position: absolute;
   width: 100%;
   background-color: #343a40;
-  background: url("Assets/img/icon_box_bg.jpg") no-repeat center center;
+  background: url("../Assets/img/icon_box_bg.jpg") no-repeat center center;
   background-size: cover;
 
 }
 .banner{
     position: relative;
-    background-color: #343a40;
-    background: url("..//img/web-banner.jpg") no-repeat center center;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("..//img/house.jfif");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -117,11 +116,24 @@ body{
 
 }
 .nav_inner{
-    display: flex;
-    left: 27%;
+    display: flex !important;
+    left: 30%;
     position: absolute;
+    top: 30px;
 }
+.nav_inner .nav-link {
+    background-color: #343a40;
+    background: #f0ffff00;
+    border: none;
+    color: white;
+}
+.nav-pills .nav-link{
+    border-radius: 0px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
 .tab-content{
+    border-bottom: 2px solid #f87d25;
+    background: #f87d2500;
     bottom: 15%;
 }
 header.masthead {
@@ -271,14 +283,14 @@ header.masthead {
  .search_bg{
     background-color: white;
     border-radius: 47px;
-    padding: 20px;
+    padding: 10px;
  }
  .search_btn{
     position: absolute !important;
     display: flex;
     width: 100px;
     right: 0px;
-    bottom: 0px;
+    bottom: -1px;
     z-index: 8 !important;
     background-color: #f87d25;
     border: none;
@@ -340,7 +352,12 @@ header.masthead {
         bottom: 10px;
     }
     .nav_inner{
-        left: 2%;
+        left: 5%;
+        --bs-nav-link-padding-x: 0.2rem;
+        top: 46px;
+    }
+    .nav_inner .nav-item{
+        font-size: 9px;
     }
     /* .nav_manu{
         width: 404px;
@@ -376,6 +393,16 @@ header.masthead {
      }
      .search_btn span{
         display: none;
+     }
+     .tab-controls .previous-button, .tab-controls .next-button{
+        position: absolute;
+
+     }
+     .tab-controls .previous-button{
+        left:10%
+     }
+     .tab-controls .next-button{
+        right:10%
      }
 }
 @media screen and (min-width: 480px) and (max-width:768px){
@@ -432,12 +459,19 @@ header.masthead {
         font-size: 12px;
     }
     .nav_manu{
-        bottom: 10px;
+        bottom: 0px;
         position: relative;
-        right: 27%;
+        left: 5%;
     }
     .form_search{
         width: 100%;
+    }
+    .nav_inner{
+        left: 0;
+    }
+    .nav-item{
+        font-size: 12px;
+        --bs-nav-link-padding-x: 0.5rem;
     }
   }
   @media screen and (min-width: 769px) and (max-width:1024px){
