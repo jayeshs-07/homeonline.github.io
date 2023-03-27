@@ -5,6 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     height: 1000px;
 }
+
 .navbar{
     width: 100%;
     transition: 0.3s;
@@ -312,9 +313,80 @@ header.masthead {
  .search_dropdown_btn{
     border:none;
  }
+<<<<<<< HEAD
 
  
 
+=======
+/* login popup css */
+.modal-backdrop{
+    --bs-backdrop-zindex: 1050;
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99 !important;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg);
+}
+.modal.fade .modal-dialog{
+    transform: translate(0,20%)!important;
+}
+.modal-header img{
+    width: 150px;
+}
+.modal-header p{
+    text-align: center;    
+}
+.modal_header_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_header_form{
+    color: white;
+    
+}
+.modal_login_btn{
+    background-color: #f87d25;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_login_btn:hover{
+    background-color: #000;
+    color: white;
+}
+.modal_header_form .input-group-text{
+    background-color: transparent;
+    color: #000;
+}
+.modal_header_form .input-group-text i{
+    color: black;
+}
+.rule_modal hr{
+position: relative;    
+}
+.rule_title_wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.modal_header_heading_p{
+ margin-top: 10px;
+}
+.modal_header_heading h5 > span{
+    color: #f87d25;
+}
+/* login popup css end*/
+>>>>>>> 148f29070853acd5dd2375e9a6f0a2d686566e19
 @media screen and (min-width: 320px) and (max-width:480px){ 
     .navbar-nav {
         
